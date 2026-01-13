@@ -1,28 +1,62 @@
 # Chapter8
-# Program Name
-Team member 1, Team member 2, Team member 3
+# Student Grades
+Max, Luke
 
 ## <program_name> Description
-Here is where you describe what the program does
+Create a program that shows student grades
 
 ### <program_name> Flowchart
 ```mermaid
 graph TD;
-  A-->B;
-  A-->C;
-  A-->D;
-  A-->E;
+  Main-->Data Input Storage;
+  Main-->File I/O;
+  Main-->D;
+  Main-->E;
 ```
 
 #### Function Diagrams
 
-| `function name1`    |               |  author     |
+| `Main`    |               |  Max     |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
 | `name:string`      | takes input for name ___ | returns total |
 ***
-| `function name2`    |               |     author   |
+| `Data Input Storage`    |               |    Max   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+***
+| `File I/O`    |               |  Luke   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+***
+| `Data Analysis`    |               |    Max   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+| `Main`    |               |  Max     |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+***
+| `Search Functionality`    |               |    Max   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+| `Main`    |               |  Max     |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for ____  |              |
+| `time:integer`     | calculates ______  | outputs ____             |
+| `name:string`      | takes input for name ___ | returns total |
+***
+| `Sorting Functionality`    |               |    Luke   |
 | ------------------ | ------------- | ------------ |
 | `argument:type`    | takes input from the user for ____  |              |
 | `time:integer`     | calculates ______  | outputs ____             |
