@@ -8,10 +8,11 @@ Create a program that shows student grades
 ### <program_name> Flowchart
 ```mermaid
 graph TD;
-  Main-->Data Input Storage;
-  Main-->File I/O;
-  Main-->D;
-  Main-->E;
+  Main-->Data_Input_Storage;
+  Main-->File_I/O;
+  Main-->Data_Analysis;
+  Main-->Search_Functionality;
+  Main-->Sorting_Functionality
 ```
 
 #### Function Diagrams
