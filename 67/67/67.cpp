@@ -5,7 +5,20 @@
 #include <cmath>
 #include <fstream>
 #include <ctime>
+#include <limits>
 using namespace std;
+
+const int MAX_STUDENTS = 10;
+const int MAX_GRADES = 100;
+
+string studentNames[MAX_STUDENTS];
+double studentGrades[MAX_STUDENTS][MAX_GRADES];
+int gradesperstudent[MAX_STUDENTS];
+double Average[MAX_STUDENTS];
+int studentCount = 0;
+
+
+void FileIO();
 
 int main()
 {
@@ -40,28 +53,70 @@ int main()
 		break;
 		case 2:
 		{
-
+			FileIO();
 		}
 		break;
 		case 3:
 		{
-
+			return 0;
 		}
 		break;
 		case 4:
 		{
-
+			return 0;
 		}
 		break;
 		case 5:
 		{
-			cout << "\nnBye Bye";
+			return 0;
+		}
+		break;
+		case 6:
+		{
+			cout << "\nnBye Bye(hehehehehehehehehehehehehehehehehehehehehe)";
 		}
 		break;
 		default:
 		{
-			cout << "Invalid CHoice\n\n";
+			cout << "Invalid CHoice!!! Try again you failure!!!\n\n";
 		}
 		}
 	}
+}
+
+void FileIO() {
+	if (studentCount == 0) {
+		cout << "\nNo data to save.\n";
+		return;
+	}
+
+	string filename;
+	cout << "\nEnter filename to save (e.g., grades.txt): ";
+	getline(cin, filename);
+
+	ofstream outFile("data/" + filename);
+
+	if (!outFile) {
+		cout << "Error: Could not open file for writing.\n";
+		return;
+	}
+
+	outFile << studentCount << endl;
+
+	for (int i = 0; i < studentCount; i++) {
+		outFile << studentNames[i] << endl;
+		outFile << gradesperstudent[i] << endl;
+
+		for (int j = 0; j < gradesperstudent[i]; j++) {
+			outFile << studentGrades[i][j];
+			if (j < gradesperstudent[i] - 1) {
+				outFile << " ";
+			}
+		}
+		outFile << endl;
+		outFile << Average[i] << endl;
+	}
+
+	outFile.close();
+	cout << "\nData saved successfully to data/" << filename << "!\n";
 }

@@ -1,10 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\2017249\\Desktop\\Chapter8\\67\\",
+  "WorkspaceRootPath": "C:\\Users\\2020920\\Desktop\\Chapter8\\67\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6C16892-7A57-4CD9-99AA-3920F377AC20}|67\\67.vcxproj|C:\\Users\\2017249\\Desktop\\Chapter8\\67\\67\\67.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{D6C16892-7A57-4CD9-99AA-3920F377AC20}|67\\67.vcxproj|C:\\Users\\2020920\\Desktop\\Chapter8\\67\\67\\67.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D6C16892-7A57-4CD9-99AA-3920F377AC20}|67\\67.vcxproj|solutionrelative:67\\67.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2020920\\Documents\\gay\\student_grades.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2017249\\Desktop\\CPP2025\\Chapter 8\\CHapter 8 Exercises\\CHapter 8 Exercises\\CHapter 8 Exercises.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -17,17 +20,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CHapter 8 Exercises.cpp",
               "DocumentMoniker": "C:\\Users\\2017249\\Desktop\\CPP2025\\Chapter 8\\CHapter 8 Exercises\\CHapter 8 Exercises\\CHapter 8 Exercises.cpp",
-              "RelativeDocumentMoniker": "..\\..\\CPP2025\\Chapter 8\\CHapter 8 Exercises\\CHapter 8 Exercises\\CHapter 8 Exercises.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\2017249\\Desktop\\CPP2025\\Chapter 8\\CHapter 8 Exercises\\CHapter 8 Exercises\\CHapter 8 Exercises.cpp",
               "ToolTip": "C:\\Users\\2017249\\Desktop\\CPP2025\\Chapter 8\\CHapter 8 Exercises\\CHapter 8 Exercises\\CHapter 8 Exercises.cpp",
-              "RelativeToolTip": "..\\..\\CPP2025\\Chapter 8\\CHapter 8 Exercises\\CHapter 8 Exercises\\CHapter 8 Exercises.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\..\\..\\2017249\\Desktop\\CPP2025\\Chapter 8\\CHapter 8 Exercises\\CHapter 8 Exercises\\CHapter 8 Exercises.cpp",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-14T19:40:30.406Z"
             },
@@ -35,13 +37,47 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "67.cpp",
-              "DocumentMoniker": "C:\\Users\\2017249\\Desktop\\Chapter8\\67\\67\\67.cpp",
+              "DocumentMoniker": "C:\\Users\\2020920\\Desktop\\Chapter8\\67\\67\\67.cpp",
               "RelativeDocumentMoniker": "67\\67.cpp",
-              "ToolTip": "C:\\Users\\2017249\\Desktop\\Chapter8\\67\\67\\67.cpp",
-              "RelativeToolTip": "67\\67.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAXAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\2020920\\Desktop\\Chapter8\\67\\67\\67.cpp*",
+              "RelativeToolTip": "67\\67.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-13T19:50:38.338Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "12f6da72-d9a9-45e6-be8e-6e8cedc620a7",
+        "Display": 0,
+        "X": 50,
+        "Y": 0,
+        "Width": 738,
+        "Height": 821,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "student_grades.cpp",
+              "DocumentMoniker": "C:\\Users\\2020920\\Documents\\gay\\student_grades.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\Documents\\gay\\student_grades.cpp",
+              "ToolTip": "C:\\Users\\2020920\\Documents\\gay\\student_grades.cpp",
+              "RelativeToolTip": "..\\..\\..\\Documents\\gay\\student_grades.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-16T14:33:31.15Z",
               "EditorCaption": ""
             }
           ]
