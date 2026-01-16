@@ -19,6 +19,10 @@ int studentCount = 0;
 
 
 void FileIO();
+void sortName(int, int);
+int partitionName(int, int);
+void displayData();
+
 
 int main()
 {
@@ -36,7 +40,8 @@ int main()
 			cout << "3. Data Analysis\n";
 			cout << "4. Search Functionality\n";
 			cout << "5. Sorting Functionality\n";
-			cout << "6. Quit\n";
+			cout << "6. Display data\n";
+			cout << "7. Quit\n";
 			cout << ":>";
 			cin >> choice;
 		} while (choice < 1 || choice > 6);
@@ -68,10 +73,15 @@ int main()
 		break;
 		case 5:
 		{
-			return 0;
+			sortName(0, studentCount -1);
 		}
 		break;
 		case 6:
+		{
+			return 0;
+		}
+		break;
+		case 7:
 		{
 			cout << "\nnBye Bye(hehehehehehehehehehehehehehehehehehehehehe)";
 		}
@@ -103,20 +113,53 @@ void FileIO() {
 
 	outFile << studentCount << endl;
 
-	for (int i = 0; i < studentCount; i++) {
-		outFile << studentNames[i] << endl;
-		outFile << gradesperstudent[i] << endl;
+	for (int idk = 0; idk < studentCount; idk++) {
+		outFile << studentNames[idk] << endl;
+		outFile << gradesperstudent[idk] << endl;
 
-		for (int j = 0; j < gradesperstudent[i]; j++) {
-			outFile << studentGrades[i][j];
-			if (j < gradesperstudent[i] - 1) {
+		for (int idk1 = 0; idk1 < gradesperstudent[idk]; idk1++) {
+			outFile << studentGrades[idk][idk1];
+			if (idk1 < gradesperstudent[idk] - 1) {
 				outFile << " ";
 			}
 		}
 		outFile << endl;
-		outFile << Average[i] << endl;
+		outFile << Average[idk] << endl;
 	}
 
 	outFile.close();
 	cout << "\nData saved successfully to data/" << filename << "!\n";
+}
+
+void sortName(int left, int right) {
+	if (left < right) {
+		int pivotindex = partitionName(left, right);
+		sortName(left, pivotindex - 1);
+		sortName(pivotindex + 1, right);
+	}
+}
+
+int partitionName(int left, int right) {
+	string pivot = studentNames[right];
+	int idk = left - 1;
+
+	for (int idk1 = left; idk1 < right; idk1++) {
+		if (studentNames[idk1] < pivot) {
+			idk++;
+
+			swap(studentNames[idk], studentNames[idk1]);
+			swap(gradesperstudent[idk], gradesperstudent[idk1]);
+			swap(Average[idk], Average[idk1]);
+
+			for (int idk2 = 0; idk2 < MAX_GRADES; idk2++) {
+				swap(studentGrades[idk][idk2], studentGrades[idk1][idk2]);
+			}
+		}
+	}
+
+	return idk + 1;
+}
+
+void displayData() {
+	cout << "This is the data for the students sorted by name." << endl;
 }
